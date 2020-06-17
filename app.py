@@ -61,7 +61,7 @@ def upload():
         print(preds[0])
 
         # x = x.reshape([64, 64]);
-        disease_class = ['Corona Virus Positive Detected' , 'Normal']
+        disease_class = ['Corona Virus Positive Detected', 'Normal']
         a = preds[0]
         ind=np.argmax(a)
         print('Prediction:', disease_class[ind])
